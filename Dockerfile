@@ -24,7 +24,7 @@ FROM eclipse-temurin:21-jre-alpine
 WORKDIR /app
 
 # Step 9: Copy built jar from builder
-COPY --from=builder /app/target/*.jar app.jar
+COPY --from=builder /app/target/chat-app-0.0.1-SNAPSHOT.jar app.jar
 
 # Step 10: Expose port 8080
 EXPOSE 8080
